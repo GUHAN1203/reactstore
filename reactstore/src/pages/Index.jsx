@@ -4,7 +4,7 @@ import Carousel from '../index components/Carousel'
 function Index() {
   return (
     <div>
-      <Carousel / >
+      <Carousel/>
     </div>
   )
 }
