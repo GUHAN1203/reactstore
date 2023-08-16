@@ -1,93 +1,64 @@
 import React from 'react'
 
 function Carousel() {
-  return (
-    <div>
-      <div class="col">
-          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    return (
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img  src="https://www.oneplus.in/content/dam/oasis/page/2023/in/kv-banner/nord-ce-3-5g/2_NordCE35G-tablet.jpg.thumb.webp"
+ class="d-block w-100" alt="..."/>
+ <div style={{ textAlign: 'left', paddingBottom: '35%' }} className="carousel-caption d-none d-md-block">
+                            <h1 className="text-black">OnePlusNord CE 3 5G</h1>
+                        </div>
 
-    
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
-
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active carousal-img ">
-                <img
-                  src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/kv-banner/nord-3-5g/1_Nord35G-tablet.jpg.thumb.webp"
-                  alt="Los Angeles" class="d-block"  />
-
-                <div  class=" carousel-caption d-none d-md-block ">
-                  <h1 class="text-black">OnePlusNord 3</h1>
-
-                </div>
-
-                <div class="carousel-caption d-none d-md-block  ">
-
-                  <p class="text-black">From 17,999
-                    Sale is now live! Get 3 Months NCEMI
-                  </p>
-                  <button class=" bg-dark text-white   px-5 py-1" type="button">Buy now</button>
-                  <a href="#" class="btn">Learn More</a>
-                </div>
-
-              </div>
-              <div class="carousel-item carousal-img ">
-                <img
-                  src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/kv-banner/keyboard-81-pro/3_Keyboard81Pro-tablet.jpg.thumb.webp"
-                  alt="Chicago" class="d-block" />
-                <div  class=" carousel-caption  d- d-none d-md-block ">
-                  <h1 class="text-white" >OnePlusNord 3</h1>
-
-                </div>
-
-                <div class="carousel-caption d-none d-md-block  ">
-
-                  <p class="text-black">From 17,999
-                    Sale is now live! Get 3 Months NCEMI
-                  </p>
-                  <button class=" bg-white text-black   px-5 py-1" type="button">Buy now</button>
-                  <a href="#" class="btn text-white">Learn More</a>
-                </div>
-
-
-              </div>
-              <div class="carousel-item carousal-img ">
-                <img
-                  src="https://www.oneplus.in/content/dam/oasis/page/2023/in/kv-banner/nord-ce-3-5g/2_NordCE35G-tablet.jpg.thumb.webp"
-                  alt="New York" class="d-block"  />
-                <div  class=" carousel-caption  d- d-none d-md-block ">
-                  <h1 class="text-black">OnePlusNord 3</h1>
-                </div>
-
-                <div  class="carousel-caption d-none d-md-block  ">
-
-                  <p class="text-black">From 17,999
-                    Sale is now live! Get 3 Months NCEMI
-                  </p>
-                  <button class=" bg-dark text-white   px-5 py-1" type="button">Buy now</button>
-                  <a href="" class="btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-
-            
-            <button class="carousel-control-prev h-50  "  type="button" data-bs-target="#demo"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next  h-50  "  type="button" data-bs-target="#demo"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-
-        </div>
+                        <div style={{ textAlign: 'left' }} className="carousel-caption d-none d-md-block">
+                            <p className="text-black">From 27,999 Sale is now live!</p>
+                            <button className="bg-dark text-white px-5 py-1" type="button">Buy now</button>
+                            <a href="#" className="btn">Learn More</a>
+                        </div>
     </div>
-  )
+    <div class="carousel-item">
+      <img src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/kv-banner/keyboard-81-pro/3_Keyboard81Pro-tablet.jpg.thumb.webp"
+ class="d-block w-100" alt="..."/>
+ <div style={{ textAlign: 'left', paddingBottom: '35%' }} className="carousel-caption d-none d-md-block">
+                            <h1 className="text-white">OnePlus Keyboard 81 Pro</h1>
+                        </div>
+
+                        <div style={{ textAlign: 'left' }} className="carousel-caption d-none d-md-block">
+                            <p className="text-white">From 17,999 Sale is now live! Get 3 Months NCEMI</p>
+                            <button className="bg-white text-black px-5 py-1" type="button">Buy now</button>
+                            <a href="#" className="btn">Learn More</a>
+                        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/kv-banner/nord-3-5g/1_Nord35G-tablet.jpg.thumb.webp"
+ class="d-block w-100" alt="..."/>
+ <div style={{ textAlign: 'left', paddingBottom: '35%' }} className="carousel-caption d-none d-md-block">
+                            <h1 className="text-black">OnePlusNord 3</h1>
+                        </div>
+
+                        <div style={{ textAlign: 'left' }} className="carousel-caption d-none d-md-block">
+                            <p className="text-black">From 34,999 Sale is now live! Get 3 Months NCEMI</p>
+                            <button className="bg-dark text-white px-5 py-1" type="button">Buy now</button>
+                            <a href="#" className="btn">Learn More</a>
+                        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    );
 }
 
 export default Carousel
