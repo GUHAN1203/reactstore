@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+Link{
+  text-decoration: none !important;  
+  color: aqua;
+}
+button {
+  border: 0px;background: transparent;padding-top: 25%;
+
+}
