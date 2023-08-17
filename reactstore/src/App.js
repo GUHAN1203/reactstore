@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import './App.css';
-import Index from './pages/Index';
-import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
-import Mobile from './pages/Mobile';
-import Display from './pages/Display';
 
-import Individual from './pages/Individual';
-import ProductList from './pages/Mobile';
+import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
+import Index from './pages/Home/Index';
+import Mobile from './pages/mobile/Mobile';
+import Individual from './pages/mobile/Individualmobile';
+import Display from './pages/tv and display/Display';
 
 function App() {
   return (
@@ -15,9 +13,9 @@ function App() {
     <NavigationBar />
   
     <Routes >
-      <Route exact path ='/' element={<Index />} />
+      <Route exact path ='/' element={<Index/>} />
       <Route path ='/mobile' element={<Mobile />} />
-      <Route path ='/display' element={<Display />} />
+      <Route path ='/display' element={< Display/>} />
       <Route path ='/individual' element={<Individual/>} />
 
     </Routes>
