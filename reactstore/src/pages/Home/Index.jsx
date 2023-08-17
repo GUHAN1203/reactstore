@@ -5,7 +5,7 @@ import Carousel from './assets/index components/Carousel';
 function Index() {
   return (
     <div>
-      <Carousel / >
+      <Carousel/>
     </div>
   )
 }
