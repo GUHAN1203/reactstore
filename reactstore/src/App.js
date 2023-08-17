@@ -9,6 +9,7 @@ import Display from './pages/tv and display/Display';
 
 function App() {
   return (
+   
     <BrowserRouter>
     <NavigationBar />
   
@@ -21,6 +22,7 @@ function App() {
     </Routes>
    </BrowserRouter>
     
+   
   );
 }
 
