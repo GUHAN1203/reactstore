@@ -1,5 +1,6 @@
 import React from 'react'
-import Carousel from '../index components/Carousel'
+import Carousel from './assets/index components/Carousel';
+
 
 function Index() {
   return (

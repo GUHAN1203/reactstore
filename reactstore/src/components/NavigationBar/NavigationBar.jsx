@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Display from '../../pages/Display';
 
 const NavigationBar = () => {
   return (
@@ -27,14 +29,16 @@ const NavigationBar = () => {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mb-2 mb-lg-0 text-nowrap">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="mobile.html">
-                      Phone
-                    </a>
+                    <Link to = "/mobile">Phone</Link>
+                    
+                    
                   </li>
                   <li className="nav-item">
+                    <Link to="/display">
                     <a className="nav-link" href="tv-display.html">
                       TV/Display
                     </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="tv-display.html">
@@ -57,8 +61,7 @@ const NavigationBar = () => {
                   <div className="d-flex ms-auto">
                     <div className="d-flex me-5">
                       <div className="dropdown text-end">
-                        <a
-                          href="#"
+                        <a href="#"
                           className="display-1 link-body-emphasis text-decoration-none dropdown-header"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
