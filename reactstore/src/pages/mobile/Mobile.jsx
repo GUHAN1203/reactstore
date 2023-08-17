@@ -1,7 +1,14 @@
 import React from 'react'
+import Filter from './components/Filter'
 
 function Mobile() {
   return (
+    <>
+    
+    <div className="row">
+      <div className="col-2"><Filter/></div>
+      
+   
 
         <div class="col-lg-10 col "> 
 
@@ -201,6 +208,9 @@ function Mobile() {
         {/*  */}
         </div>
         </div>
+        </div>
+    
+        </>
         
   )
 }
