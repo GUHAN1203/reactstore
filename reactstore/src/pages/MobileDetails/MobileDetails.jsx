@@ -29,7 +29,7 @@ function MobileDetails(){
             <h1 className="mt-0">{productDetail.name}</h1>
             <p style={{color: "rgb(139, 143, 147)"}}>Marble Odyssey 16 GB RAM + 256 GB Storage</p>
             <h3>₹64,999</h3>
-            <p style={{color:" rgb(139, 143, 147);"}}>M.R.P. ₹64,999 (inclusive of all taxes)</p>
+            <p style={{color:" rgb(139, 143, 147)"}}>M.R.P. ₹64,999 (inclusive of all taxes)</p>
             <hr/>
             
             <div className="col-md-6  ps-md-0">
