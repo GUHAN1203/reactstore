@@ -1,5 +1,5 @@
 import React from 'react'
-import Filter from './components/Filter'
+import Filter from './Filter'
 
 function Mobile() {
   return (
