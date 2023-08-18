@@ -1,0 +1,78 @@
+/*--------------------------highlight section-----------------------------------*/
+
+  
+.hot-picks-head div:hover{
+    border-bottom:1px solid red;
+  }
+  
+  .horizontal-scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1%;
+  }
+  ::-webkit-scrollbar { 
+    width: 0px; /* remove scrollbar space */ 
+    background: transparent; /* optional: just make scrollbar invisible */ 
+    }
+  .hot-picks-head div{
+    margin-right: 45px;
+    display: inline-block;
+  
+  }
+  
+  .hot-picks-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+  }
+  .zoom-in{
+    width: 313px;;
+    transition: transform .4s;
+    transform: scale(1);
+  }
+  .zoom-in:hover{ 
+    transform: scale(1.1);
+  }
+  
+  .hot-picks-highlight a div{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    color: black;
+    padding: 10px 0;
+    
+  }
+  
+  .hot-picks-highlight div:hover .highlight-button{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hot-picks-highlight{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 50px;
+  }
+  
+  .hot-picks-highlight-card p{
+    font-size: 14px;
+  }
+  .hot-picks-highlight-card h3{
+    font-size: 1.7rem;
+  }
+  .hot-picks-highlight h3,p{
+    white-space:normal;
+  }
+  
+  .hot-picks-highlight-card{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 3fr 1.8fr 1fr;
+  }
+  
+  /* -------------------------------------------------------------------------------------------- */

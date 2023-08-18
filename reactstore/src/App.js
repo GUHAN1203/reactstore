@@ -1,6 +1,6 @@
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import './App.css';
-
+import Footer from './components/Footer/Footer';
 import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Index from './pages/Home/Index';
 import Mobile from './pages/mobile/Mobile';
@@ -9,6 +9,7 @@ import Display from './pages/tv and display/Display';
 
 function App() {
   return (
+   
     <BrowserRouter>
     <NavigationBar />
   
@@ -19,8 +20,10 @@ function App() {
       <Route path ='/individual' element={<Individual/>} />
 
     </Routes>
+    <Footer/>
    </BrowserRouter>
     
+   
   );
 }
 
