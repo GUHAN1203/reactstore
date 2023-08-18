@@ -1,5 +1,4 @@
 import React from 'react'
-import Filter from './Filter'
 import { useState } from 'react';
 import { MobileData } from '../../../components/Data/MobileData'
 import { Link } from 'react-router-dom';

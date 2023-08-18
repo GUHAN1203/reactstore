@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Display from "../../pages/tv and display/Display";
+import Display from "../../pages/tv and display/components/Display";
 
 const NavigationBar = () => {
   return (
