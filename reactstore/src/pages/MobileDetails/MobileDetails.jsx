@@ -11,7 +11,7 @@ function MobileDetails(){
 
     useEffect(()=>{
         
-        const findProduct = MobileData.find((item)=> item.prodId === paramsId.id)
+        const findProduct = MobileData.find((item)=> item.id === paramsId.id)
         setProductDetail({...findProduct})
     }, [])
     return(
@@ -26,7 +26,7 @@ function MobileDetails(){
         </div>
         
         <div className="col-md-6 p-5 ps-md-0  ">
-            <h1 className="mt-0">Oneplus 11 5G</h1>
+            <h1 className="mt-0">{productDetail.name}</h1>
             <p style={{color: "rgb(139, 143, 147)"}}>Marble Odyssey 16 GB RAM + 256 GB Storage</p>
             <h3>₹64,999</h3>
             <p style={{color:" rgb(139, 143, 147);"}}>M.R.P. ₹64,999 (inclusive of all taxes)</p>
