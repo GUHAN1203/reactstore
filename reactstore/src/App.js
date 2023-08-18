@@ -3,8 +3,7 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Index from './pages/Home/Index';
-import Mobile from './pages/mobile/components/Mobile';
-import Individual from './pages/mobile/Individualmobile';
+import Individual from './pages/mobile/components/Individualmobile';
 import Display from './pages/tv and display/Display';
 import MobileIndex from './pages/mobile/MobileIndex';
 

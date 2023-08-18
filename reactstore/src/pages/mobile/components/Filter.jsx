@@ -4,7 +4,7 @@ function Filter() {
   return (
     <div  style ={{alignItems:'flex-start'}}  class="album py-5 px-3">
     <div class="row">
-      <div   class="col- d-none d-lg-block ps-5">
+      <div   class=" ps-4">
         <div style={{position: "sticky",top: "0"}}class="filter mt-5 ">
         
         <h3>Series</h3>
