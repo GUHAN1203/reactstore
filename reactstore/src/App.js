@@ -7,6 +7,7 @@ import Mobile from './pages/mobile/components/Mobile';
 import Individual from './pages/mobile/Individualmobile';
 import Display from './pages/tv and display/Display';
 import MobileIndex from './pages/mobile/MobileIndex';
+import MobileDetails from './pages/MobileDetails/MobileDetails';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path ='/' element={<Index/>} />
       <Route path ='/mobile' element={<MobileIndex />} />
       <Route path ='/display' element={< Display/>} />
+      <Route path="/mobile-details/:id" element={<MobileDetails/>}/>
       <Route path ='/individual' element={<Individual/>} />
 
     </Routes>

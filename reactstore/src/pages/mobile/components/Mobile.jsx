@@ -2,6 +2,7 @@ import React from 'react'
 import Filter from './Filter'
 import { useState } from 'react';
 import { MobileData } from '../../../components/Data/MobileData'
+import { Link } from 'react-router-dom';
 
 function Mobile() {
   
@@ -10,8 +11,11 @@ function Mobile() {
   return (
     mobileData.map((item,index)=>{
       return(
-    
+        <>
+        <Link to={`/mobile-details/${item.id}`}>
+        
                   <div className="col">
+                  
                     <div className=" card rounded-0 border-white ">
                       <img src={item.imgUrl} />
 
@@ -31,10 +35,12 @@ function Mobile() {
                         </div>
                       </div>
                     </div>
-                  </div>   
-    
+                    
+                  </div>  
+                  
+    </Link>
 
-    
+</>
     
       
       )
