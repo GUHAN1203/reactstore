@@ -126,7 +126,7 @@ const NavigationBar = () => {
                         </a>
                         <ul className="dropdown-menu text-small">
                           <li>
-                             <a className="dropdown-item" href="#">
+                             <a className="dropdown-item" href="/login">
                                 Sign up or Sign in
                               </a>
                              <a className="dropdown-item" href="#">
