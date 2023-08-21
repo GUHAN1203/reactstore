@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 
-export const CreateContextApi = createContext();
+ const CreateContextApi = createContext();
 
 
 const CreateContextProvider =()=>{
@@ -9,4 +9,4 @@ const CreateContextProvider =()=>{
 }
 
 
-export default CreateContextProvider;
+export { CreateContextProvider,CreateContextApi} ;
