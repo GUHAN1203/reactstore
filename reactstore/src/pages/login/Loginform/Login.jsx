@@ -1,5 +1,8 @@
 import React from "react";
 import {FaTimes} from "react-icons/fa"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FaEnvelope, FaGoogle} from "react-icons/fa"
+
 
 function Login() {
   return (
@@ -26,23 +29,25 @@ function Login() {
               {/* Checkbox */}
               <div className="d-flex justify-content-start mb-2">
 
-                <a href="/forgot" className="">Forgot password ?</a>
+                <a href="/forgot" className="">Forgot Password ?</a>
               </div>
 
               <button className="btn btn-primary btn-lg btn-block mx-2" type="submit">Login</button>
-              <a href="/signup"><button className="btn btn-primary btn-lg btn-block mx-2" type="submit" >SIgnup</button></a>
+              <a href="/signup"><button className="btn btn-primary btn-lg btn-block mx-2" type="submit" >SignUp</button></a>
               
 
               <hr className="my-4" />
 
-              <button className="btn btn-lg btn-block btn-primary" style={{ backgroundColor: '#dd4b39' }}
-                type="submit"><i className="fab fa-google me-2"></i> Sign in with google</button>
-              <button className="btn btn-lg btn-block btn-primary mb-2" style={{ backgroundColor: '#3b5998' }}
-                type="submit"><i className="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+              <a href="/google"><FaGoogle color="black"/></a>
+              <FontAwesomeIcon icon="fa-brands fa-google" />
+              
+              <a href="/email"><FaEnvelope color="black"  /></a>
+                <FontAwesomeIcon icon="fa-solid fa-envelope" />
+              
 
             </div>
           </div>
-        </div>
+        </div>+
       </div>
     </div>
   </section>
