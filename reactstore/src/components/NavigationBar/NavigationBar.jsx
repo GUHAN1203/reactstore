@@ -70,7 +70,7 @@ const NavigationBar = () => {
                 <div className="d-flex ms-auto">
                   <div className="d-flex  ms-auto">
                     <div className="d-flex me-3 ">
-                      <div className="dropdown text-end">
+                      <div className="dropdown text-end"  >
                         <a href="#"
                           className="display-1 link-body-emphasis text-decoration-none dropdown-header"
                           data-bs-toggle="dropdown"
@@ -108,7 +108,7 @@ const NavigationBar = () => {
                       </span>
                     </a>
                     <div className="d-flex me-3 ">
-                      <div className="dropdown text-end">
+                      <div className="dropdown text-end  "style={{marginRight:"80px" }}>
                         <a
                           href="#"
                           className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown"

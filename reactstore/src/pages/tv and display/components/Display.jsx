@@ -10,10 +10,11 @@ function Display() {
   return (
     displayData.map((item,index)=>{
       return(
-        <>
-        <Link to={`/display-details/${item.id}`}>
         
-                  <div className="col">
+        <>
+        <Link to={`/display-details/${item.id}`} >
+        
+                  <div className="col" style={{textDecoration:'none'}}>
                   
                     <div className=" card rounded-0 border-white ">
                       <img src={item.imgUrl} />
@@ -29,7 +30,7 @@ function Display() {
                             
                           </div>
                           
-                          <small className="text-decoration-line-through text-secondary">{item.rate}</small>
+                          <small className="text-decoration-line-through text-secondary" >{item.rate}</small>
                           <small className="text-black text-primary">{item.offPrice}</small>
                         </div>
                       </div>

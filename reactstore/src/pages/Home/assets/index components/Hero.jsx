@@ -33,8 +33,9 @@ function Hero() {
       </div>
 
       <div className="container d-none d-lg-block">
+        <a href="http://localhost:3000/mobile-details/prod001">
         <div className="grid-parent">
-          <div className="grid-item-1"><h1 className="pt-1" style={{ color: 'black', fontFamily: 'Oxygen, sans-serif' }}>OnePlus 115G</h1></div>
+          <div className="grid-item-1"><h1 className="pt-1" style={{ color: 'black', fontFamily: 'Oxygen, sans-serif' }}>OnePlus 11 5G</h1></div>
           <div className="grid-item-img"><img className="w-100" src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/large-card/oneplus-11/Large_product_card_3model_PC.jpg.thumb.webp" alt="" /></div>
           <div className="grid-item-3">
             <div>
@@ -49,10 +50,12 @@ function Hero() {
             </div>
           </div>
         </div>
+        </a>
       </div>
 
       <div className="py-5 bg-light">
         <div className="container">
+          <a href="http://localhost:3000/display-details/prod003">
           <div className="row row-cols-1 row-cols-sm-2  row-cols-md-2 row-cols-lg-2 ">
             <div className="col">
               <div className="card rounded-0 border-white h-100">
@@ -60,7 +63,7 @@ function Hero() {
 
                 <div className="card-body bg-white">
                   <p className="card-header bg-white"><b>ONEPLUS TV</b></p>
-                  <p> <b>O series </b>32| 43 | 55 </p>
+                  <p> <b>U series </b>32| 43 | 55 </p>
                   <div className="d-grid gap-2 col-12 mx-auto">
                     <button className="btn btn-dark rounded-0" type="button">Buy</button>
                   </div>
@@ -91,6 +94,7 @@ function Hero() {
               </div>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </>
