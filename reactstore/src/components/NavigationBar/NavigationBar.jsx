@@ -71,12 +71,11 @@ const NavigationBar = () => {
                   <div className="d-flex  ms-auto">
                     <div className="d-flex me-3 ">
                       <div className="dropdown text-end">
-                        <a
-                          href="#"
+                        <a href="#"
                           className="display-1 link-body-emphasis text-decoration-none dropdown-header"
                           data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                          aria-expanded="false" >
+                      
                           <span
                             alt="login"
                             style={{ width: "10px" }}
@@ -112,20 +111,21 @@ const NavigationBar = () => {
                       <div className="dropdown text-end">
                         <a
                           href="#"
-                          className="display-1 link-body-emphasis text-decoration-none dropdown-header"
+                          className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
                         >
                           <span
                             alt="login"
                             style={{ width: "10px" }}
-                            className="material-symbols-outlined rounded-circle  my-0"
+                            className="material-symbols-outlined rounded-circle  my-0 drop-btn"
                           >
                             person
                           </span>
                         </a>
-                        <ul className="dropdown-menu text-small">
-                          <li>
+                        <ul className="dropdown-menu text-small ">
+
+                          <li className="drop">
                              <a className="dropdown-item" href="/login">
                                 Sign up or Sign in
                               </a>
