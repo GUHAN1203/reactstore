@@ -132,7 +132,7 @@ const NavigationBar = () => {
                              <a className="dropdown-item" href="#">
                                 Offer
                               </a>
-                             <a className="dropdown-item" href="#">
+                             <a className="dropdown-item" href="/account">
                                 Account
                               </a>
                              <a className="dropdown-item" href="#">

@@ -12,9 +12,11 @@ import DisplayIndex from './pages/tv and display/Dispalyindex';
 
 
 
+
 import Login from './pages/login/Loginform/Login';
 import Signup from './pages/login/signup/Signup';
 import Forgot from './pages/login/Forgot/Forgot';
+import Profile from './pages/login/profile/Profile';
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/forgot' element={<Forgot/>}/>
+      <Route path='/account' element={<Profile/>}/>
  
     </Routes>
    < Footer/>
