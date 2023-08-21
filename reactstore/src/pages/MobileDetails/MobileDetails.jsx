@@ -11,9 +11,9 @@ function MobileDetails(){
 
     useEffect(()=>{
         
-        // const findProduct = MobileData.find((item)=> item.id === params.id)
-        // setProductDetail({...findProduct})
-        setProductDetail(MobileData.find((item)=> item.id === params.id))
+        const findProduct = MobileData.find((item)=> item.id === params.id)
+        setProductDetail({...findProduct})
+        
     }, [])
     return(
 
@@ -28,12 +28,12 @@ function MobileDetails(){
         <div className="col-md-6 p-5 ps-md-0  ">
             <h1 className="mt-0">{productDetail.name}</h1>
             <p style={{color: "rgb(139, 143, 147)"}}>{productDetail.color}</p>
-            <p style={{color:" rgb(139, 143, 147);"}}>M.R.P. {productDetail.offPrice}(inclusive of all taxes)</p>
-            <h3>{productDetail.rate}</h3>
+            <p style={{color:" rgb(139, 143, 147);"}}>M.R.P. {productDetail.rate}(inclusive of all taxes)</p>
+            <h3>{productDetail.offPrice}</h3>
             <hr/>
             
             <div className="col-md-6  ps-md-0">
-                <h4>Color:MarbleOdyssey </h4>
+                <h4>{productDetail.color} </h4>
                 <img style={{width: "50px"}}
                     src="nsdfghj"
                     alt=" Oneplus "/>

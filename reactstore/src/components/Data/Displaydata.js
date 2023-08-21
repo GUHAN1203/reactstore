@@ -1,10 +1,13 @@
 export const DisplayData =[{
-    id:"prod001",
+    id:"disp001",
     imgUrl:"https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202212/08/duJ29XvzzOevNzHW.png?x-amz-process=image/format,webp/quality,Q_80",
     name:"OnePlus TV 43 | 50 | 55 Y1S Pro ",
     rate:"₹49,999",
     offPrice:'₹37,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '43"',
+    screensize2: '50"',
+    screensize3: '55"'
 
 },
 {
@@ -13,7 +16,10 @@ export const DisplayData =[{
     name:"OnePlus Y Series TV 32 | 40 | 43 Y1",
     rate:"₹18,999",
     offPrice:'₹12,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '32"',
+    screensize2: '40"',
+    screensize3: '43"'
 },
 {
     id:"prod003",
@@ -21,7 +27,10 @@ export const DisplayData =[{
     name:"OnePlus TV U Series 50 | 55 | 65 U1S",
     rate:"₹69,999",
     offPrice:'₹59,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '50"',
+    screensize2: '55"',
+    screensize3: '65"'
 },
 {
     id:"prod004",
@@ -29,7 +38,10 @@ export const DisplayData =[{
     name:"OnePlus TV Y Series 32 | 40 | 43 Y1S",
     rate:"₹29,999",
     offPrice:'₹19,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '32"',
+    screensize2: '40"',
+    screensize3: '43"'
 },
 {
     id:"prod005",
@@ -37,7 +49,8 @@ export const DisplayData =[{
     name:"OnePlus Monitor E 24",
     rate:"₹19,999",
     offPrice:'₹11,999',
-    type: 'display'
+    type: 'display',
+    screensize1:'24"'
 },
 {
     id:"prod006",
@@ -45,7 +58,9 @@ export const DisplayData =[{
     name:"OnePlus TV Q Series 65 Q2 Pro",
     rate:"₹159,999",
     offPrice:'₹94,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '65"'
+    
 },
 {
     id:"prod007",
@@ -53,7 +68,9 @@ export const DisplayData =[{
     name:"OnePlus TV Y Series 32 | 43 Y1S Edge",
     rate:"₹33,999",
     offPrice:'₹22,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '32"',
+    screensize2: '43"'
 },
 {
     id:"prod008",
@@ -61,7 +78,8 @@ export const DisplayData =[{
     name:"OnePlus TV Q1 Series | 55 Q1 Pro",
     rate:"₹99,999",
     offPrice:'₹,999',
-    type: 'display'
+    type: 'display',
+    screensize1: '55"',    
 },
 {
     id:"prod009",

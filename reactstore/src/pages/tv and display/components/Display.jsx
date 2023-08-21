@@ -11,7 +11,7 @@ function Display() {
     displayData.map((item,index)=>{
       return(
         <>
-        <Link to={`/dislay-details/${item.id}`}>
+        <Link to={`/display-details/${item.id}`}>
         
                   <div className="col">
                   
