@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { DisplayData } from '../../../components/Data/DisplayData';
+import { DisplayData } from '../../../components/Data/Displaydata';
 import { Link } from 'react-router-dom';
 
 function Display() {

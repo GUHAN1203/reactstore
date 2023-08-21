@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react"
 import { useParams } from "react-router"
-import { DisplayData } from "../../components/Data/DisplayData";
+import { DisplayData } from "../../components/Data/Displaydata";
 
 
 function DisplayDetails(){
