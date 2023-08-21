@@ -20,6 +20,7 @@ function App() {
     <NavigationBar />
   
     <Routes >
+      
       <Route exact path ='/' element={<Index/>} />
       <Route path ='/mobile' element={<Mobile />} />
       <Route path ='/display' element={< Display/>} />
