@@ -11,7 +11,6 @@ function DisplayDetails(){
     useEffect(()=>{
         
         const findProduct = DisplayData.find((item)=> item.id === params.id)
-        console.log(findProduct)
         setProductDetail({...findProduct})
         
     }, [])

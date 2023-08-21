@@ -36,8 +36,11 @@ const NavigationBar = () => {
                 className="collapse navbar-collapse pe-5 pt-2 "
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav mb-2 mb-lg-0 text-nowrap pe-5" style={{fontWeight:'600'}}>
-                  <li className="nav-item " >
+                <ul
+                  className="navbar-nav mb-2 mb-lg-0 text-nowrap pe-5"
+                  style={{ fontWeight: "600" }}
+                >
+                  <li className="nav-item ">
                     <a class="nav-link " href="/mobile">
                       Mobile
                     </a>
@@ -67,13 +70,12 @@ const NavigationBar = () => {
                 <div className="d-flex ms-auto">
                   <div className="d-flex  ms-auto">
                     <div className="d-flex me-3 ">
-                      <div className="dropdown text-end">
-                        <a
-                          href="#"
+                      <div className="dropdown text-end"  >
+                        <a href="#"
                           className="display-1 link-body-emphasis text-decoration-none dropdown-header"
                           data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                          aria-expanded="false" >
+                      
                           <span
                             alt="login"
                             style={{ width: "10px" }}
@@ -95,21 +97,7 @@ const NavigationBar = () => {
                           </li>
                         </ul>
                       </div>
-
-                      <ul className="dropdown-menu text-small">
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            <input
-                              className="form-control mr-sm-2"
-                              type="search"
-                              placeholder="Search"
-                              aria-label="Search"
-                            />
-                          </a>
-                        </li>
-                      </ul>
                     </div>
-
                     <a
                       href="#"
                       className="d-block link-body-emphasis text-decoration-none mx-2"
@@ -119,70 +107,44 @@ const NavigationBar = () => {
                         shopping_cart
                       </span>
                     </a>
-                    <div className="dropdown text-end">
-                      <a
-                        href="#"
-                        className="display-1 link-body-emphasis text-decoration-none dropdown-header"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <span
-                          alt="login"
-                          style={{ width: "10px" }}
-                          className="material-symbols-outlined rounded-circle mx-1"
+                    <div className="d-flex me-3 ">
+                      <div className="dropdown text-end  "style={{marginRight:"80px" }}>
+                        <a
+                          href="#"
+                          className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
-                          person
-                        </span>
-                      </a>
-                      <ul className="dropdown-menu text-small">
-                        <li>
-                          <a className="dropdown-item" href="#"></a>
-                          <ul className="dropdown-menu text-small">
-                            <li>
-                              <a className="dropdown-item" href="#"></a>
-                            </li>
-                            <li>
-                              <a className="dropdown-item" href="#">
+                          <span
+                            alt="login"
+                            style={{ width: "10px" }}
+                            className="material-symbols-outlined rounded-circle  my-0 drop-btn"
+                          >
+                            person
+                          </span>
+                        </a>
+                        <ul className="dropdown-menu text-small ">
+
+                          <li className="drop">
+                             <a className="dropdown-item" href="/login">
                                 Sign up or Sign in
                               </a>
-                            </li>
-                            <li>
-                              <hr className="dropdown-divider" />
-                            </li>
-                            <li>
-                              <hr className="dropdown-divider" />
-                            </li>
-                            <li>
-                              <a className="dropdown-item" href="#">
-                                Orders
+                             <a className="dropdown-item" href="#">
+                                Offer
                               </a>
-                            </li>
-                            <li>
-                              <hr className="dropdown-divider" />
-                            </li>
-                            <li>
-                              <hr className="dropdown-divider" />
-                            </li>
-                            <li>
-                              <a className="dropdown-item" href="#">
+                             <a className="dropdown-item" href="#">
                                 Account
                               </a>
-                            </li>
-                            <li>
-                              <hr className="dropdown-divider" />
-                            </li>
-                            <li>
-                              <hr className="dropdown-divider" />
-                            </li>
-                            <li>
-                              <a className="dropdown-item" href="#">
-                                Sign out
+                             <a className="dropdown-item" href="#">
+                                Coupon
                               </a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                   
+                   
                   </div>
                 </div>
               </div>

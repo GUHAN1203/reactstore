@@ -30,12 +30,13 @@ function Carousel() {
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
+      <a href="http://localhost:3000/mobile-details/prod004"> <div class="carousel-item active">
+         <img
             src="https://www.oneplus.in/content/dam/oasis/page/2023/in/kv-banner/nord-ce-3-5g/2_NordCE35G-tablet.jpg.thumb.webp"
             class="d-block w-100"
             alt="..."
           />
+          
           <div
             style={{ textAlign: "left", paddingBottom: "35%" }}
             className="carousel-caption d-none d-md-block"
@@ -56,6 +57,7 @@ function Carousel() {
             </a>
           </div>
         </div>
+        </a>
         <div class="carousel-item">
           <img
             src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/kv-banner/keyboard-81-pro/3_Keyboard81Pro-tablet.jpg.thumb.webp"
@@ -84,12 +86,13 @@ function Carousel() {
             </a>
           </div>
         </div>
+        <a href="http://localhost:3000/mobile-details/prod003">
         <div class="carousel-item">
           <img
             src="https://oasis.opstatics.com/content/dam/oasis/page/2023/in/kv-banner/nord-3-5g/1_Nord35G-tablet.jpg.thumb.webp"
             class="d-block w-100"
             alt="..."
-          />
+            />
           <div
             style={{ textAlign: "left", paddingBottom: "35%" }}
             className="carousel-caption d-none d-md-block"
@@ -100,7 +103,7 @@ function Carousel() {
           <div
             style={{ textAlign: "left" }}
             className="carousel-caption d-none d-md-block"
-          >
+            >
             <p className="text-black">
               From 34,999 Sale is now live! Get 3 Months NCEMI
             </p>
@@ -112,6 +115,7 @@ function Carousel() {
             </a>
           </div>
         </div>
+            </a>
       </div>
       <button
         class="carousel-control-prev"
