@@ -22,16 +22,16 @@ function Login() {
         style={{ marginTop: "100px", marginBottom: "100px" }}
       >
         <div className="col">
-          <div style={{backgroundColor:'white',width:'800px'}}>
-          <div style={{ textAlign: "center", fontSize: "150%",paddingTop:'30px' }}>
+          <div style={{backgroundColor:'white',width:'600px',borderRadius:'25px'}}>
+          <div style={{ textAlign: "center", fontSize: "170%",paddingTop:'30px' }}>
             Sign in/Create account
           </div>
 
           <div style={{ textAlign: "center", paddingBottom: "20px",marginTop:'100px' }}>
             <input
               style={{
-                width: "500px",
-                height: "40px",
+                width: "400px",
+                height: "50px",
                 border: "none",
                 paddingLeft: "20px",
                 fontSize: "15px",
@@ -47,8 +47,8 @@ function Login() {
           <div style={{ textAlign: "center", paddingBottom: "10px" }}>
             <input
               style={{
-                width: "500px",
-                height: "40px",
+                width: "400px",
+                height: "50px",
                 border: "none",
                 paddingLeft: "20px",
                 fontSize: "15px",
@@ -62,14 +62,14 @@ function Login() {
             
             
           </div>
-          <div style={{ textAlign: "center", paddingBottom: "50px",paddingLeft:'350px' }}>
+          <div style={{ textAlign: "center", paddingBottom: "10px",paddingLeft:'250px' }}>
             <a href="/forgot">Forgot password ?</a>
           </div>
           
           <div style={{ textAlign: "center" }}>
             <button
               style={{
-                marginTop:'100px',
+                marginTop:'30px',
                 backgroundColor: "black",
                 color: "white",
                 borderRadius: "120px",
@@ -80,19 +80,19 @@ function Login() {
               Sign in with password
             </button>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center",marginTop:'80px' }}>
 
             Other ways to sign in
             </div>
             <div className="" style={{display:'flex', justifyContent:'center'}}>
 
-            <div style={{display:'flex',width:'15%',gap:'40px', fontSize:'14px'}}>
+            <div style={{display:'flex',width:'25%',gap:'40px', fontSize:'14px'}}>
               <div >
 
               <a href="#" style={{textDecoration:'none',color:'black',fontWeight:''}} >
                 <img
                   className="w-100"
-                  style={{ padding:'10px' }}
+                  style={{ padding:'10px', }}
                   src={require("../../../images/email.png")}
                   alt=""
                 />
