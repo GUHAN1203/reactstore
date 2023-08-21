@@ -1,9 +1,9 @@
 import { useState,useEffect } from "react"
 import { useParams } from "react-router"
-import { MobileData } from "../../components/Data/MobileData";
-import './MobileDetails.css'
+import { DisplayData } from "../../components/Data/DisplayData";
 
-function MobileDetails(){
+
+function DisplayDetails(){
     const params = useParams();
     const [productDetail, setProductDetail] = useState({});
     
@@ -11,9 +11,9 @@ function MobileDetails(){
 
     useEffect(()=>{
         
-        // const findProduct = MobileData.find((item)=> item.id === params.id)
-        // setProductDetail({...findProduct})
-        setProductDetail(MobileData.find((item)=> item.id === params.id))
+        const findProduct = DisplayData.find((item)=> item.id === params.id)
+        setProductDetail({...findProduct})
+        setProductDetail(DisplayData.find((item)=> item.id === params.id))
     }, [])
     return(
 
@@ -90,4 +90,4 @@ function MobileDetails(){
     )
 }
 
-export default MobileDetails
+export default DisplayDetails

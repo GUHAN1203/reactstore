@@ -1,4 +1,4 @@
-export const MobileData =[{
+export const ProductData =[{
     id:"prod001",
     imgUrl:"https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202306/02/Z8drqdOKU2JlZyl5.png?x-amz-process=image/format,webp/quality,Q_80",
     name:"Oneplus 11 5G",

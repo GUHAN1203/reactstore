@@ -1,0 +1,9 @@
+.stick{
+    position:sticky;
+}   
+
+/* @media (max-width:667px){
+    .stick{
+        position: static;
+    }
+} */

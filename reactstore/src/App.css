@@ -42,6 +42,7 @@ Link{
   color: aqua;
 }
 button {
-  border: 0px;background: transparent;padding-top: 25%;
+  border: 0px;background: transparent;padding: 2% 4% ;
+  margin: 1%;
 
 }
