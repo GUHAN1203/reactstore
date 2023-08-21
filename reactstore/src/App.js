@@ -4,9 +4,10 @@ import Footer from './components/footer/Footer'
 
 import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Index from './pages/Home/Index';
-import Mobile from './pages/mobile/Mobile';
-import Individual from './pages/mobile/Individualmobile';
-import Display from './pages/tv and display/Display';
+import Individual from './pages/mobile/components/Individualmobile';
+import Display from './pages/tv and display/components/Display';
+import MobileIndex from './pages/mobile/MobileIndex';
+import MobileDetails from './pages/MobileDetails/MobileDetails';
 
 
 import Login from './pages/login/Loginform/Login';
@@ -22,8 +23,9 @@ function App() {
     <Routes >
       
       <Route exact path ='/' element={<Index/>} />
-      <Route path ='/mobile' element={<Mobile />} />
+      <Route path ='/mobile' element={<MobileIndex />} />
       <Route path ='/display' element={< Display/>} />
+      <Route path="/mobile-details/:id" element={<MobileDetails/>}/>
       <Route path ='/individual' element={<Individual/>} />
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
