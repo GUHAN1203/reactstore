@@ -16,7 +16,21 @@ const Storage = multer.diskStorage({
 
 const upload = multer({storage:Storage})
 router.post("/add-product",upload.single("imageFile"),(req,res)=>{
+    const title=req.body.title;
+    const price=req.body.price;
+    const description=req.body.description;
+    const imgFile=req.file.filename; 
+    const newProduct =new Products({
+        title:title,
+        price:price,
+        description:description,
+        imgPath:imgFile
 
+    })
 })
+newProduct.save(){
+    .then(result=>
+    res.status(200).json(result);
+    )}
 
 module.exports=router;
