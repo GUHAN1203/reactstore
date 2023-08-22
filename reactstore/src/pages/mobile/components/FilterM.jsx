@@ -17,6 +17,7 @@ function Filter() {
             <input type="checkbox" class="form-check-input" id="check2" name="Nord Series" value="something"/>
             <label class="form-check-label" htmlFor="check2"><h5>Nord series</h5></label>
           </div>
+          <span className=' '></span>
           <h3>Offers</h3>
         
             <div class="form-check">

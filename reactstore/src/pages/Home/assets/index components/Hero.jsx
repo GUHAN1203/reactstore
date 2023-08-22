@@ -55,11 +55,11 @@ function Hero() {
 
       <div className="py-5 bg-light">
         <div className="container">
-          <a href="http://localhost:3000/display-details/prod003">
           <div className="row row-cols-1 row-cols-sm-2  row-cols-md-2 row-cols-lg-2 ">
             <div className="col">
+          <a href="http://localhost:3000/display-details/prod003">
               <div className="card rounded-0 border-white h-100">
-                <img height="100%" src="https://oasis.opstatics.com/content/dam/oasis/page/events/in/product-list/TV-43-Y1S-pro.png" style={{ minHeight: '250px' }} alt="" />
+                <img height="100%" src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202212/05/kVRt1oJTEl6DZnOb.png?x-amz-process=image/format,webp/quality,Q_80" style={{ minHeight: '250px' }} alt="" />
 
                 <div className="card-body bg-white">
                   <p className="card-header bg-white"><b>ONEPLUS TV</b></p>
@@ -74,6 +74,7 @@ function Hero() {
                   </div>
                 </div>
               </div>
+          </a>
             </div>
             <div className="col">
               <div className="card rounded-0 border-white h-100">
@@ -94,7 +95,6 @@ function Hero() {
               </div>
             </div>
           </div>
-          </a>
         </div>
       </div>
     </>
