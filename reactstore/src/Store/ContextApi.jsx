@@ -16,4 +16,4 @@ const CreateContextProvider =({children})=>{
 }
 
 
-export {CreateContextApi,CreateContextProvider} ;
+export default CreateContextProvider;

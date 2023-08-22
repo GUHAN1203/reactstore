@@ -30,7 +30,7 @@ function Mobile() {
                           </div>
                           
                           <small className="text-decoration-line-through text-secondary">{item.rate}</small>
-                          <small className="text-black text-primary">{item.rate}</small>
+                          <small className="text-black text-primary">{item.offPrice}</small>
                         </div>
                       </div>
                     </div>

@@ -17,7 +17,7 @@ function Picks() {
         <div className="hot-picks-highlight horizontal-scroll">
             <div className="hot-picks-highlight-card" style={{width: "280px"}}>
               <div className="hot-picks-img mb-4" >
-                <a href="">
+                <a href="http://localhost:3000/mobile-details/prod002">
                   <img className="zoom-in" src="https://image01-in.oneplus.net/ebp/202303/29/1-m00-50-fd-cpgm7wqj5riagurqaakzkxnnips198.png" alt="hw"/>
                 </a>
               </div>
@@ -38,8 +38,9 @@ function Picks() {
             </div>
   
             <div className="hot-picks-highlight-card" style={{width: "280px"}}>
+              
               <div className="hot-picks-img mb-4" >
-                <a href="">
+                <a href="http://localhost:3000/mobile-details/prod005">
                   <img className="zoom-in" src="https://image01-in.oneplus.net/ebp/202305/31/1-m00-51-66-cpgm7wr26omaegnzaaniaca13ya555_360_360.png" alt="hw"/>
                 </a>
               </div>
@@ -57,11 +58,12 @@ function Picks() {
                   </div>
                 </a>
               </div>
+          
             </div>
   
             <div className="hot-picks-highlight-card" style={{width: "280px"}}>
               <div className="hot-picks-img mb-4" >
-                <a href="">
+                <a href="http://localhost:3000/display-details/prod002">
                   <img className="zoom-in" src="https://image01-in.oneplus.net/ebp/202212/27/1-m00-4c-30-cpgm7moqqlgacqqqaary8omzel0913.png" alt="hw"/>
                 </a>
               </div>
