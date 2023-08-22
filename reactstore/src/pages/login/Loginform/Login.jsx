@@ -3,7 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaEnvelope, FaGoogle } from "react-icons/fa";
 import "../Loginform/Login.css";
-import { email } from "../../../images/email.png";
+
 
 function Login() {
   return (
@@ -93,7 +93,7 @@ function Login() {
                 <img
                   className="w-100"
                   style={{ padding:'10px', }}
-                  src={require("../../../images/email.png")}
+                  src="images/email.png"
                   alt=""
                 />
                 <p style={{textAlign:'center',textDecoration:'none',color:'black',fontWeight:'lighter'}}>Email</p>
@@ -105,7 +105,7 @@ function Login() {
                 <img
                   className="w-100"
                   style={{ padding:'10px' }}
-                  src={require("../../../images/google.png")}
+                  src="images/google.png"
                   alt=""
                 />
                 <p style={{textAlign:'center',color:'black'}}>Google</p>
