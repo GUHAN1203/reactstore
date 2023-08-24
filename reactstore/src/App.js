@@ -35,7 +35,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/forgot' element={<Forgot/>}/>
-      <Route path="/addForm" element={<ProductForm/>}/>
+      <Route path="/productForm" element={<ProductForm/>}/>
  
     </Routes>
    < Footer/>

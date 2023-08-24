@@ -1,8 +1,11 @@
 import React from 'react'
+import 
 
 function ProductForm() {
   return (
-    <form className="product-form" onSubmit={onSubmitForm}>
+    <form className="product-form" 
+    // onSubmit={onSubmitForm}
+    >
                   
     <div className="form-group mb-4">
       <input
@@ -10,8 +13,8 @@ function ProductForm() {
         placeholder="product image"
         name="imgfile"
         className="form-control"
-        value={productInpt.imgfile}
-        onChange={onInptHandler}
+        // value={productInpt.imgfile}
+        // onChange={onInptHandler}
       />
     </div>
     <div className="form-group mb-4">
@@ -20,8 +23,8 @@ function ProductForm() {
         placeholder="product title"
         name="title"
         className="form-control"
-        value={productInpt.title}
-        onChange={onInptHandler}
+        // value={productInpt.title}
+        // onChange={onInptHandler}
       />
     </div>
     <div className="form-group mb-4">
@@ -30,8 +33,8 @@ function ProductForm() {
         placeholder="product price"
         name="price"
         className="form-control"
-        value={productInpt.price}
-        onChange={onInptHandler}
+        // value={productInpt.price}
+        // onChange={onInptHandler}
       />
     </div>
     <div className="form-group mb-4">
@@ -39,8 +42,8 @@ function ProductForm() {
         name="description"
         className="form-control"
         placeholder="Description"
-        value={productInpt.description}
-        onChange={onInptHandler}
+        // value={productInpt.description}
+        // onChange={onInptHandler}
       ></textarea>
     </div>
 
