@@ -1,4 +1,5 @@
 const express = require("express");
+
 const cors = require("cors");
 const mongoose = require("mongoose");
 
@@ -8,7 +9,7 @@ require("dotenv").config();
 const url = process.env.ATLAS_URL;
 
 app.use("/", (req, res)=>{
-    res.send("varrataa ");
+    res.send("Hello Node");
 })
 
 mongoose.connect(url)
@@ -19,3 +20,4 @@ mongoose.connect(url)
 .catch((err) =>{
     console.log(err)
 })
+

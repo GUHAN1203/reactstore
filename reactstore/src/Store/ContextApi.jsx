@@ -1,12 +1,19 @@
 import { createContext } from "react";
 
+const INITIALDATA={
+    product:[]
+}
 
- const CreateContextApi = createContext();
+const CreateContextApi = createContext(INITIALDATA);
 
-
-const CreateContextProvider =()=>{
-    return <CreateContextApi.Provider value={{}}></CreateContextApi.Provider>
+const itemProducer =(state,action)=>{
+    return <></>
+}
+const CreateContextProvider =({children})=>{
+    return <CreateContextApi.Provider value={{}}>
+        {children}
+    </CreateContextApi.Provider>
 }
 
 
-export { CreateContextProvider,CreateContextApi} ;
+export default CreateContextProvider;
