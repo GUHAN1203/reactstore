@@ -26,7 +26,7 @@ function App() {
   
     <Routes >
       
-      <Route exact path ='/' element={<Index/>} />
+      <Route  path ='/' element={<Index/>} />
       <Route path ='/mobile' element={<MobileIndex />} />
       <Route path='/display' element={<DisplayIndex/>} />
       <Route path="/mobile-details/:id" element={<MobileDetails/>}/>
