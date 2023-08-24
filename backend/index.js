@@ -9,6 +9,8 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
 require("dotenv").config();
 const url = process.env.ATLAS_URL;
 app.use("/products",productRouter)
@@ -25,4 +27,5 @@ mongoose.connect(url)
 .catch((err) =>{
     console.log(err)
 })
+
 
