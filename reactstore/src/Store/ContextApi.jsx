@@ -5,6 +5,9 @@ const INITIALDATA={
 }
 
 const CreateContextApi = createContext(INITIALDATA);
+=========
+ const CreateContextApi = createContext();
+>>>>>>>>> Temporary merge branch 2
 
 const itemProducer ={state,action}=>{
     
@@ -16,4 +19,8 @@ const CreateContextProvider =({children})=>{
 }
 
 
+<<<<<<<<< Temporary merge branch 1
 export {CreateContextApi,CreateContextProvider} ;
+=========
+export { CreateContextProvider,CreateContextApi} ;
+>>>>>>>>> Temporary merge branch 2
