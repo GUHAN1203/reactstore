@@ -10,6 +10,7 @@ footer li a:hover{
 }
 .list-head{
     color: aliceblue;
+    
     margin-bottom:0.5rem;
 }
 footer li{
@@ -54,7 +55,7 @@ footer .support a{
 
   @media (min-width:1022px) {
     #footer-2{
-        display: none;
+        display: block;
     }
   }
   @media(max-width:1021px){
