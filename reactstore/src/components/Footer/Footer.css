@@ -13,6 +13,10 @@ footer li a:hover{
     
     margin-bottom:0.5rem;
 }
+
+.lists{
+  display: flex;
+}
 footer li{
     list-style: none;
 }
@@ -55,7 +59,7 @@ footer .support a{
 
   @media (min-width:1022px) {
     #footer-2{
-        display: block;
+        display: none;
     }
   }
   @media(max-width:1021px){

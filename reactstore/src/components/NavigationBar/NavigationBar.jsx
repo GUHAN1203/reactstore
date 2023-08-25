@@ -9,16 +9,10 @@ const NavigationBar = () => {
         <div className="col-12">
           <nav
             className="navbar navbar-expand-lg p-0 bg-body-tertiary"
-            style={{ margin: "0%" }}
+            style={{ margin:0 }}
           >
             <div className="container-fluid my-0" style={{ fontSize: "80%" }}>
-              <a className="py-2 ps-5 navbar-brand " href="/">
-                <img
-                  src="https://seeklogo.com/images/O/oneplus-logo-70A6B4FAEA-seeklogo.com.png"
-                  style={{ width: "100px" }}
-                  alt=""
-                />
-              </a>
+              
 
               <button
                 style={{ boxShadow: "none", border: "none" }}
@@ -32,6 +26,32 @@ const NavigationBar = () => {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
+              {/* logo */}
+              <a className="py-2 ps-5 navbar-brand " href="/">
+                <img
+                  src="https://seeklogo.com/images/O/oneplus-logo-70A6B4FAEA-seeklogo.com.png"
+                  style={{ width: "100px" }}
+                  alt=""
+                />
+              </a>
+              {/* person */}
+              <div className="d-flex  ">
+                      <div className="dropdown text-end  "style={{marginRight:"80px" }}>
+                        <a href="#"className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <span
+                            alt="login"
+                            style={{ width: "10px" }}
+                            className="material-symbols-outlined rounded-circle  my-0 drop-btn"
+                          >
+                          
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </div>
+                    {/* navbar */}
               <div
                 className="collapse navbar-collapse pe-5 pt-2 "
                 id="navbarSupportedContent"
@@ -71,10 +91,7 @@ const NavigationBar = () => {
                   <div className="d-flex  ms-auto">
                     <div className="d-flex me-3 ">
                       <div className="dropdown text-end"  >
-                        <a href="#"
-                          className="display-1 link-body-emphasis text-decoration-none dropdown-header"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false" >
+                        <a href="#" className="display-1 link-body-emphasis text-decoration-none dropdown-header" data-bs-toggle="dropdown"aria-expanded="false" >
                       
                           <span
                             alt="login"
@@ -98,23 +115,17 @@ const NavigationBar = () => {
                         </ul>
                       </div>
                     </div>
-                    <a
-                      href="#"
-                      className="d-block link-body-emphasis text-decoration-none mx-2"
-                      aria-expanded="false"
-                    >
+                    <a href="#" className="d-block link-body-emphasis text-decoration-none mx-2"
+                      aria-expanded="false">
                       <span class="material-symbols-outlined">
                         shopping_cart
                       </span>
                     </a>
                     <div className="d-flex me-3 ">
                       <div className="dropdown text-end  "style={{marginRight:"80px" }}>
-                        <a
-                          href="#"
-                          className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        
+                      <a href="#" className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown" data-bs-toggle="dropdown"
+                          aria-expanded="false">
                           <span
                             alt="login"
                             style={{ width: "10px" }}

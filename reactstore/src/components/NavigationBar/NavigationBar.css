@@ -1,7 +1,12 @@
 .drop-btn{
     position: relative;
-  display: inline-block;
-
+  display: inline-block; 
+  right: 10px;
 }
+
 .drop-btn a:hover {background-color: #ddd;}
 .drop-btn:hover .drop-content {display: block;}
+
+.dropdown-menu {
+  margin-right: 20px;
+}

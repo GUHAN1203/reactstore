@@ -1,23 +1,20 @@
 const express = require("express");
-
 const cors = require("cors");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser")
-const productRouter = require (" ./router/products")
+const bodyParser = require("body-parser");
+const ProductRouter = require("./router/products");
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.use(express.static("public"));
+
 require("dotenv").config();
 const url = process.env.ATLAS_URL;
-app.use("/products",productRouter)
 
-app.use("/", (req, res)=>{
-    res.send("Hello Node");
-})
+//Routers
+app.use("/product", ProductRouter);
 
 mongoose.connect(url)
 .then(()=>{
@@ -27,5 +24,3 @@ mongoose.connect(url)
 .catch((err) =>{
     console.log(err)
 })
-
-

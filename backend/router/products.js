@@ -21,6 +21,7 @@ router.post("/add-product", upload.single("imageFile"), (req, res)=>{
     const price = req.body.price;
     const description = req.body.description;
     const imgfile = req.file.filename;
+
     const newProduct = new Products({
         title: title,
         price: price,
@@ -37,5 +38,40 @@ router.post("/add-product", upload.single("imageFile"), (req, res)=>{
     })
 
 })
+
+router.get("/", (req, res) => {
+    Products.find()
+    .then(data =>{
+        res.status(200).json(data);
+    })
+    .catch(err =>{
+        res.status(400).json(err);
+    })
+})
+
+router.post("/update-product", upload.single("imageFile"), (req, res)=>{
+    Products.findById(req.body.id)
+    .then((updateItem) =>{
+        updateItem.title = req.body.title;
+        updateItem.price = req.body.price;
+        updateItem.description = req.body.description;
+        if(req.file){
+            updateItem.imgPath = req.file.filename;
+        }
+
+        updateItem.save()
+        .then(data =>{
+            res.status(200).json(data);
+
+        })
+        .catch(err =>{
+            res.status(400).json(err)
+        })
+    })
+    .catch(err =>{
+        res.status(400).json(err);
+    })
+})
+
 
 module.exports = router;
