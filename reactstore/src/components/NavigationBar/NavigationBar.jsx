@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Display from "../../pages/tv and display/components/Display";
+import"./NavigationBar.css";
 
 const NavigationBar = () => {
   return (
@@ -90,7 +90,7 @@ const NavigationBar = () => {
                 <div className="d-flex ms-auto">
                   <div className="d-flex  ms-auto">
                     <div className="d-flex me-3 ">
-                      <div className="dropdown text-end"  >
+                      <div className="dropdown text-end dropdown"  >
                         <a href="#" className="display-1 link-body-emphasis text-decoration-none dropdown-header" data-bs-toggle="dropdown"aria-expanded="false" >
                       
                           <span
@@ -115,14 +115,14 @@ const NavigationBar = () => {
                         </ul>
                       </div>
                     </div>
-                    <a href="#" className="d-block link-body-emphasis text-decoration-none mx-2"
+                    <a href="/cart" className=" d-block link-body-emphasis text-decoration-none mx-2"
                       aria-expanded="false">
                       <span class="material-symbols-outlined">
                         shopping_cart
                       </span>
                     </a>
                     <div className="d-flex me-3 ">
-                      <div className="dropdown text-end  "style={{marginRight:"80px" }}>
+                      <div className="dropdown text-end  dropdown "style={{marginRight:"80px" }}>
                         
                       <a href="#" className="display-1 link-body-emphasis text-decoration-none dropdown-header dropdown" data-bs-toggle="dropdown"
                           aria-expanded="false">
@@ -140,15 +140,13 @@ const NavigationBar = () => {
                              <a className="dropdown-item" href="/login">
                                 Sign up or Sign in
                               </a>
-                             <a className="dropdown-item" href="#">
-                                Offer
+                             <a className="dropdown-item" href="/orders">
+                                Orders
                               </a>
-                             <a className="dropdown-item" href="#">
+                             <a className="dropdown-item" href="/login">
                                 Account
                               </a>
-                             <a className="dropdown-item" href="#">
-                                Coupon
-                              </a>
+                            
 
                           </li>
                         </ul>
