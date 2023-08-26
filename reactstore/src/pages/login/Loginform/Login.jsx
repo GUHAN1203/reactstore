@@ -15,29 +15,32 @@ function Login() {
               <h3 className="mb-5">Sign in</h3>
 
               <div className="form-outline mb-4">
-                <input type="email" id="typeEmailX-2" className="form-control form-control-lg"placeholder="Email " />
+                <input type="email" id="typeEmailX-2" className="form-control form-control-lg"placeholder="Phone number " />
            
               </div>
 
               <div className="form-outline mb-4">
-                <input type="password" id="typePasswordX-2" className="form-control form-control-lg" placeholder="Password "/>
+                <input type="password" id="typePasswordX-2" className="form-control form-control-lg" placeholder="Verification code "/>
          
               </div>
 
               {/* Checkbox */}
-              <div className="d-flex justify-content-start mb-2">
+              <div className="d-flex justify-content-start mb-3">
 
                 <a href="/forgot" className="">Forgot Password ?</a>
               </div>
 
-              <button className="btn btn-primary btn-lg btn-block mx-2" type="submit">Login</button>
-              <a href="/signup"><button className="btn btn-primary btn-lg btn-block mx-2" type="submit" >SignUp</button></a>
+
+              <a href="/signup">
+                <button style={{borderRadius:"1px",backgroundColor:"red",borderColor:"red"}}  className="btn btn-primary btn-lg btn-block mx-2" type="submit" >SignUp</button></a>
               
 
               <hr className="my-4" />
 
               <a href="/google"><FaGoogle color="black"/></a>
-              <FontAwesomeIcon icon="fa-brands fa-google" />
+              <FontAwesomeIcon  icon="fa-brands fa-google" />
+              <span style={{padding:"20px"}} className='space '></span>
+
               
               <a href="/email"><FaEnvelope color="black"  /></a>
                 <FontAwesomeIcon icon="fa-solid fa-envelope" />
@@ -45,7 +48,7 @@ function Login() {
 
             </div>
           </div>
-        </div>+
+        </div>=
       </div>
     </div>
   </section>

@@ -26,7 +26,7 @@ function Picks() {
                 <p>Get 6 months of Spotify Premium at no extra cost.</p>
               </div>
               <div>
-                <a href="" style={{textDecoration: "none"}}>
+                <a href="http://localhost:3000/mobile-details/prod002" style={{textDecoration: "none"}}>
                   <div className="highlight-button">
                       <span className="material-symbols-outlined me-1">
                         shopping_cart
@@ -49,7 +49,7 @@ function Picks() {
                 <p>Save additional ₹1000 with bank discount.</p>
               </div>
               <div>
-                <a href="" style={{textDecoration: "none"}}>
+                <a href="http://localhost:3000/mobile-details/prod005" style={{textDecoration: "none"}}>
                   <div className="highlight-button">
                       <span className="material-symbols-outlined me-1">
                         shopping_cart
@@ -72,7 +72,7 @@ function Picks() {
                 <p>Up to ₹1500 instant bank discount; Save extra ₹1000 by using the RCC linked device benefit.</p>
               </div>
               <div>
-                <a href="" style={{textDecoration:"none"}}>
+                <a href="http://localhost:3000/display-details/prod002" style={{textDecoration:"none"}}>
                   <div className="highlight-button">
                       <span className="material-symbols-outlined me-1">
                         shopping_cart

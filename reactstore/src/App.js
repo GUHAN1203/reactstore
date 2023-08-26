@@ -1,10 +1,10 @@
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import './App.css';
 import Footer from './components/Footer/Footer';
+import Cart from './pages/Cart/Cart';
 
 import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Index from './pages/Home/Index';
-import Individual from './pages/mobile/components/Individualmobile';
 import MobileIndex from './pages/mobile/MobileIndex';
 import MobileDetails from './pages/MobileDetails/MobileDetails';
 import DisplayDetails from './pages/Tv and Display Details/DisplayDetails';
@@ -17,6 +17,7 @@ import Signup from './pages/login/signup/Signup';
 import Forgot from './pages/login/Forgot/Forgot';
 
 import ProductForm from './components/Product Form/ProductForm';
+import Orders from './pages/Orders/Orders';
 
 function App() {
   return (
@@ -26,15 +27,17 @@ function App() {
   
     <Routes >
       
-      <Route exact path ='/' element={<Index/>} />
+      <Route  path ='/' element={<Index/>} />
       <Route path ='/mobile' element={<MobileIndex />} />
       <Route path='/display' element={<DisplayIndex/>} />
       <Route path="/mobile-details/:id" element={<MobileDetails/>}/>
-      <Route path ='/individual' element={<Individual/>} />
       <Route path="/display-details/:id"element={<DisplayDetails/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/forgot' element={<Forgot/>}/>
+      <Route path='/cart' element={<Cart/>}/>
+      <Route path='/orders' element={<Orders/>}/>
+
       <Route path="/productForm" element={<ProductForm/>}/>
  
     </Routes>

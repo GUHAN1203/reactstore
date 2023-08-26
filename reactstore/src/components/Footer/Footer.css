@@ -10,7 +10,12 @@ footer li a:hover{
 }
 .list-head{
     color: aliceblue;
+    
     margin-bottom:0.5rem;
+}
+
+.lists{
+  display: flex;
 }
 footer li{
     list-style: none;
