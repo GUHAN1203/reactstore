@@ -15,8 +15,6 @@ import DisplayIndex from './pages/tv and display/Dispalyindex';
 import Login from './pages/login/Loginform/Login';
 import Signup from './pages/login/signup/Signup';
 import Forgot from './pages/login/Forgot/Forgot';
-
-import ProductForm from './components/Product Form/ProductForm';
 import Orders from './pages/Orders/Orders';
 
 function App() {
@@ -37,8 +35,6 @@ function App() {
       <Route path='/forgot' element={<Forgot/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/orders' element={<Orders/>}/>
-
-      <Route path="/productForm" element={<ProductForm/>}/>
  
     </Routes>
    < Footer/>
