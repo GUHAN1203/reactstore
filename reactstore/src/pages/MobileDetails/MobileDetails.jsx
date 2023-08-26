@@ -73,7 +73,7 @@ function MobileDetails(){
                     </li>
                 </ul>
             </div>
-            <div style={{width: ""}} className="col-md-6 mb-md-0 p-md-4 w- ">
+            <div style={{width: ""}} className="col-md-6 mb-md-0 md-4  ">
                 <button style={{backgroundColor: "rgb(255, 6, 6)", color: "aliceblue"}}>Buy Now</button>
                 <button style={{backgroundColor: "rgb(0, 0, 0)",color: "aliceblue"}}>Add to Cart</button>
             </div>
