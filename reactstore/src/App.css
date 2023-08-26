@@ -49,3 +49,15 @@ button {
 a{
   text-decoration: none;
 }
+
+.add-product-wraper{
+    
+}
+textarea.form-control{
+    height: 110px;
+}
+.bx-card{
+    background-color: #fff;
+    box-shadow: 0 1px 5px #ccc;
+    padding: 20px;
+}
