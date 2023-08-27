@@ -8,7 +8,7 @@ function Index() {
       <Carousel/>
       <Picks/>
       <Hero/>
-    </div>
+          </div>
   )
 }
 
