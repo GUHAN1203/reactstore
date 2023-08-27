@@ -1,7 +1,8 @@
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import './App.css';
 import Footer from './components/Footer/Footer';
-import Cart from './pages/Cart/Cart';
+import Cart from './pages/Cart/Cart'
+
 
 import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Index from './pages/Home/Index';
