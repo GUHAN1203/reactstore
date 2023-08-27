@@ -10,10 +10,6 @@ import MobileIndex from './pages/mobile/MobileIndex';
 import MobileDetails from './pages/MobileDetails/MobileDetails';
 import DisplayDetails from './pages/Tv and Display Details/DisplayDetails';
 import DisplayIndex from './pages/tv and display/Dispalyindex';
-
-
-
-
 import Login from './pages/login/Loginform/Login';
 import Signup from './pages/login/signup/Signup';
 import Forgot from './pages/login/Forgot/Forgot';
