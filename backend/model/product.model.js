@@ -1,23 +1,27 @@
+const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const ProductRouter = require("./router/products");
 
-const schema = mongoose.Schema;
-const productSchema = new schema({
-    title:{
-        type:String,
-        required:true
-    },
-    price:{
-        type:String,
-        required:true
-    },
-    description:{
-        type:String,
-        required:true
-    },
-    imgPath:{
-        type:String,
-        required:true
-    }
+const app = express();
+app.use(cors());
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.use(express.static("public"));
+
+require("dotenv").config();
+const url = process.env.ATLAS_URL;
+
+//Routers
+app.use("/product", ProductRouter);
+
+mongoose.connect(url)
+
+.then(()=>{
+    app.listen(8000);
+    console.log("Mongoose connected.")
 })
-
-module.exports = mongoose.model("Products", productSchema)
+.catch((err) =>{
+    console.log(err)
+})
