@@ -18,6 +18,8 @@ function Filter() {
             <input type="checkbox" class="form-check-input" id="check2" name="Nord Series" value="something"/>
             <label class="form-check-label" htmlFor="check2"><h5>QLED</h5></label>
           </div>
+          <span style={{padding:"8px"}} className='space '></span>
+
           <h3>Categories</h3>
         
             <div class="form-check">
@@ -28,6 +30,8 @@ function Filter() {
               <input type="checkbox" class="form-check-input" id="check2" name="Nord Series" value="something"/>
               <label class="form-check-label" htmlFor="check2"><h5>Monitors</h5></label>
             </div>
+            <span style={{padding:"8px"}} className='space '></span>
+
             <h3>Resolution</h3>
         
               <div class="form-check">
@@ -42,6 +46,7 @@ function Filter() {
                 <input type="checkbox" class="form-check-input" id="check2" name="Nord Series" value="something"/>
                 <label class="form-check-label" htmlFor="check2"><h5>Ultra HD (4K), 3840 x 2160</h5></label>
               </div>
+              <span style={{padding:"8px"}} className='space '></span>
 
               <h3>Number of HDMI ports</h3>
               <div class="form-check">
@@ -56,8 +61,12 @@ function Filter() {
               <input type="checkbox" class="form-check-input" id="check2" name="Nord Series" value="something"/>
               <label class="form-check-label" htmlFor="check2"><h5>4</h5></label>
               </div>
+              <span style={{padding:"8px"}} className='space '></span>
+
               <h3>Price Range</h3>
                 <div>₹0<input type="range"/>₹99,999</div>
+                <span style={{padding:"8px"}} className='space '></span>
+
                 <h3>Availability</h3>
                   
         
