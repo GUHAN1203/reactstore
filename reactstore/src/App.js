@@ -1,7 +1,8 @@
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import './App.css';
 import Footer from './components/Footer/Footer';
-import Cart from './pages/Cart/Cart';
+import Cart from './pages/Cart/Cart'
+
 
 import{ BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Index from './pages/Home/Index';
@@ -9,7 +10,8 @@ import MobileIndex from './pages/mobile/MobileIndex';
 import MobileDetails from './pages/MobileDetails/MobileDetails';
 import DisplayDetails from './pages/Tv and Display Details/DisplayDetails';
 import DisplayIndex from './pages/tv and display/Dispalyindex';
-
+import AudioIndex from './pages/Audio/AudioIndex';
+import AudioDetails from './pages/AudioDetails/AudioDetails';
 
 
 import Login from './pages/login/Loginform/Login';
@@ -35,6 +37,11 @@ function App() {
       <Route path='/forgot' element={<Forgot/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/orders' element={<Orders/>}/>
+      <Route path='/audio' element={<AudioIndex/>}/>
+      <Route path="/audio-details/:id" element={<AudioDetails/>}/>
+
+
+      <Route path="/productForm" element={<ProductForm/>}/>
  
     </Routes>
    < Footer/>

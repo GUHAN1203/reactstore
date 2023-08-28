@@ -10,7 +10,7 @@ function Cart() {
         <h3 class="fw-light">Your shopping cart is empty</h3>
         <p class="lead text-muted">but it doesn't have to be.</p>
         
-          <a href="#" class="btn btn-primary my-2" style={{backgroundColor:"red",borderColor:"red",borderRadius:"1px"}}>Go Shopping</a>
+          <a href="/" class="btn btn-primary my-2" style={{backgroundColor:"red",borderColor:"red",borderRadius:"1px"}}>Go Shopping</a>
           
        
       </div>
