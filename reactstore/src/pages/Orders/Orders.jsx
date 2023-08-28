@@ -11,7 +11,7 @@ function Orders() {
         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXzgLfMwWU_DYgTlz4xkMVQG6fT8U_wGDZ1L6aylzTI1-UrEff" alt="" />
         <p class="lead text-muted">You doesn't have any orders.</p>
         
-          <a href="#" class="btn btn-primary my-2" style={{backgroundColor:"red",borderColor:"red",color:"white",borderRadius:"none"}}>Go Shopping</a>
+          <a href="/" class="btn btn-primary my-2" style={{backgroundColor:"red",borderColor:"red",color:"white",borderRadius:"none"}}>Go Shopping</a>
           
        
       </div>
