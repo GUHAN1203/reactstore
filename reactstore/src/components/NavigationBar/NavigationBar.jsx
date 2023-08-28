@@ -71,7 +71,7 @@ const NavigationBar = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="tv-display.html">
+                    <a className="nav-link" href="/audio">
                       Audio & Watch
                     </a>
                   </li>
