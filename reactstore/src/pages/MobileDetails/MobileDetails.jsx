@@ -1,13 +1,13 @@
 import { useState,useEffect } from "react"
 import { useParams } from "react-router"
 import { MobileData } from "../../components/Data/MobileData";
+
 import './MobileDetails.css'
 
 function MobileDetails(){
     const params = useParams();
     const [productDetail, setProductDetail] = useState({});
-    
-   
+
 
     useEffect(()=>{
         
