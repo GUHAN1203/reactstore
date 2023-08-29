@@ -28,14 +28,14 @@ function MobileDetails(){
         <div className="col-md-6 p-5 ps-md-0  ">
             <h1 className="mt-0">{productDetail.name}</h1>
             <p style={{color: "rgb(139, 143, 147)"}}>{productDetail.color}</p>
-            <p style={{color:" rgb(139, 143, 147);"}}>M.R.P. {productDetail.rate}(inclusive of all taxes)</p>
             <h3>{productDetail.offPrice}</h3>
+            <p style={{color:" rgb(139, 143, 147);"}}>M.R.P. {productDetail.rate}(inclusive of all taxes)</p>
             <hr/>
             
             <div className="col-md-6  ps-md-0">
                 <h4>{productDetail.color} </h4>
                 <img style={{width: "50px"}}
-                    src="nsdfghj"
+                    src={productDetail.colorurl}
                     alt=" Oneplus "/>
             </div>
             <hr/>
@@ -43,9 +43,9 @@ function MobileDetails(){
             <div className="col-md-6 p-1 ps-md-0">
                 <h4>ROM</h4>
                 <div className="btn-group">
-                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)"}}>16 GB RAM + 256 GB
+                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)",border:"solid 2px black"}}>16 GB RAM + 256 GB
                         Storage</button>
-                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)"}}>8 GB RAM + 128 GB
+                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0),",border:"solid 2px black"}}>8 GB RAM + 128 GB
                         Storage</button>
                 </div>
             </div>
@@ -73,15 +73,16 @@ function MobileDetails(){
                     </li>
                 </ul>
             </div>
-            <div style={{width: ""}} className="col-md-6 mb-md-0 md-4  ">
-                <button style={{backgroundColor: "rgb(255, 6, 6)", color: "aliceblue"}}>Buy Now</button>
-                <button style={{backgroundColor: "rgb(0, 0, 0)",color: "aliceblue"}}>Add to Cart</button>
-            </div>
-            
+            <hr/>
             <div>
                 <h3>Delivery</h3>
                 <h5 style={{color: "rgb(193, 185, 185)"}}>Fastest:</h5>
                 <p>Saturday , Aug 12 (If you order by 16:00 PM)</p>
+            </div>
+            <hr/>
+            <div style={{width: ""}} className="col-md-6 mb-md-0 md-4  ">
+                <button style={{backgroundColor: "rgb(255, 6, 6)", color: "aliceblue"}}>Buy Now</button>
+                <button style={{backgroundColor: "rgb(0, 0, 0)",color: "aliceblue"}}>Add to Cart</button>
             </div>
             
         </div>

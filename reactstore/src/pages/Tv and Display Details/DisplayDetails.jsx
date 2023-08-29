@@ -34,9 +34,9 @@ function DisplayDetails(){
             <div className="col-md-6 p-1 ps-md-0">
                 <h4>Screen Size</h4>
                 <div className="btn-group">
-                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)"}}>{productDetail.screensize2}</button>
-                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)"}}>{productDetail.screensize3}</button>
-                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)"}}>{productDetail.screensize1}</button>
+                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)",border:"solid 1px black"}}>{productDetail.screensize2}</button>
+                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)",border:"solid 1px black"}}>{productDetail.screensize3}</button>
+                    <button style={{backgroundColor: "rgb(250, 250, 250)", color:" rgb(0, 0, 0)",border:"solid 1px black"}}>{productDetail.screensize1}</button>
                 </div>
             </div>
             <hr/>

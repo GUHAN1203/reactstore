@@ -53,7 +53,7 @@ function Login() {
               backgroundColor:'#f2f2f2',
               borderRadius:'10px'
             }}
-            type="text"
+            type="password"
             className="email"
             placeholder="Password"
           />{" "}
@@ -65,6 +65,8 @@ function Login() {
         </div>
         
         <div style={{ textAlign: "center" }}>
+          <a href="/">
+
           <button
             style={{
               marginTop:'30px',
@@ -74,9 +76,11 @@ function Login() {
               width: "300px",
               
             }}
+            
           >
             Sign in with password
           </button>
+          </a>
         </div>
         <div style={{ textAlign: "center",marginTop:'80px' }}>
 
