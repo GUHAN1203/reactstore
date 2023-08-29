@@ -17,16 +17,23 @@ const Storage = multer.diskStorage({
 const upload = multer({storage: Storage})
 
 router.post("/add-product", upload.single("imageFile"), (req, res)=>{
-    const title = req.body.title;
-    const price = req.body.price;
-    const description = req.body.description;
-    const imgfile = req.file.filename;
+    const imgUrl = req.body.ImgUrl;
+    const name = req.body.name;
+    const colorram = req.body.colorram;
+    const rate = req.file.rate;
+    const color = req.file.color;
+    const offPrice = req.file.offPrice;
+    const type = req.file.type;
+
 
     const newProduct = new Products({
-        title: title,
-        price: price,
-        description: description,
-        imgPath: imgfile
+        imgUrl: imgUrl,
+        name: name,
+        colorram: colorram,
+        rate: rate,
+        color: color,
+        offPrice: offPrice,
+        type: type
     })
 
     newProduct.save()
@@ -52,11 +59,16 @@ router.get("/", (req, res) => {
 router.post("/update-product", upload.single("imageFile"), (req, res)=>{
     Products.findById(req.body.id)
     .then((updateItem) =>{
-        updateItem.title = req.body.title;
-        updateItem.price = req.body.price;
-        updateItem.description = req.body.description;
+        updateItem.imgUrl= req.body.imgUrl,
+        updateItem.name= req.body.name,
+        updateItem.colorram= req.body.colorram,
+        updateItem.rate= req.body.rate,
+        updateItem.color=req.body.color,
+        updateItem.offPrice= req.body.offPrice,
+        updateItem.type= req.body.type
+
         if(req.file){
-            updateItem.imgPath = req.file.filename;
+            updateItem.imgUrl = req.file.filename;
         }
 
         updateItem.save()

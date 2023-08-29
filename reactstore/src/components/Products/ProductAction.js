@@ -6,10 +6,13 @@ import ProductItems from "./ProductItems";
 const ProductAction = () => {
 
   const [productInpt, setProductInpt] = useState({
-    title: "",
-    price: "",
-    description: "",
-    imgfile: "",
+    imgUrl: '',
+        name: '',
+        colorram: '',
+        rate: '',
+        color: '',
+        offPrice: '',
+        type: ''
   });
 
   const [fileInpt, setFileInpt] = useState(null);
@@ -30,19 +33,25 @@ const ProductAction = () => {
   const onSubmitForm = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-    formData.append("title", productInpt.title);
-    formData.append("price", productInpt.price);
-    formData.append("description", productInpt.description);
-    formData.append("imageFile", fileInpt);
+    formData.append("name", productInpt.name);
+    formData.append("colorram", productInpt.colorram);
+    formData.append("rate", productInpt.rate);
+    formData.append("color", productInpt.color);
+    formData.append("offPrice", offPrice);
+    formData.append("type", type);
 
     try{
       const response = await axios.post("http://localhost:8000/product/add-product", formData)
       console.log(response);
       setProductInpt({
-        title: "",
-        price: "",
-        description: "",
-        imgfile: "",
+        imgUrl: '',
+        name: '',
+        colorram: '',
+        rate: '',
+        color: '',
+        offPrice: '',
+        type: ''
+        
       });
       setFileInpt(null)
       setImgView(null)
@@ -77,10 +86,10 @@ const ProductAction = () => {
                   <div className="form-group mb-4">
                     <input
                       type="text"
-                      placeholder="product title"
+                      placeholder="product name"
                       name="title"
                       className="form-control"
-                      value={productInpt.title}
+                      value={productInpt.name}
                       onChange={onInptHandler}
                     />
                   </div>
@@ -90,16 +99,35 @@ const ProductAction = () => {
                       placeholder="product price"
                       name="price"
                       className="form-control"
-                      value={productInpt.price}
+                      value={productInpt.rate}
+                      onChange={onInptHandler}
+                    />
+                  </div>
+                  <div className="form-group mb-4">
+                    <input
+                      type="text"
+                      placeholder="Offprice "
+                      name="price"
+                      className="form-control"
+                      value={productInpt.offPrice}
                       onChange={onInptHandler}
                     />
                   </div>
                   <div className="form-group mb-4">
                     <textarea
-                      name="description"
+                      name="Color and ram description"
                       className="form-control"
                       placeholder="Description"
-                      value={productInpt.description}
+                      value={productInpt.colorram}
+                      onChange={onInptHandler}
+                    ></textarea>
+                  </div>
+                  <div className="form-group mb-4">
+                    <textarea
+                      name="Color and ram description"
+                      className="form-control"
+                      placeholder="Description"
+                      value={productInpt.colorram}
                       onChange={onInptHandler}
                     ></textarea>
                   </div>
