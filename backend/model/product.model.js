@@ -10,10 +10,7 @@ const productSchema = new schema({
         type:String,
         required:true
     },
-    name:{
-        type:String,
-        required:true
-    },
+    
     colorram:{
         type:String,
         required:true

@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Cart from './pages/Cart/Cart'
 import Wrapper from './components/Wrapper/Wrapper';
+import MobileIndextest  from './pages/mobile/MobileIndextest';
 
 
 
@@ -29,7 +30,7 @@ function App() {
     <Routes >
       
       
-      <Route path ='/mobile' element={<MobileIndex />} />
+    <Route path ='/mobile' element={<MobileIndex />} />
       <Route path='/display' element={<DisplayIndex/>} />
       <Route path="/mobile-details/:id" element={<MobileDetails/>}/>
       <Route path="/display-details/:id"element={<DisplayDetails/>}/>
@@ -39,12 +40,14 @@ function App() {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/orders' element={<Orders/>}/>
       <Route path='/' element={<Wrapper />} >
+      <Route path ='/mobile' element={<MobileIndex />} />
+      <Route path ='/mobiletest' element={<MobileIndextest />} />
         <Route  path ='' element={<Index/>} />
             
             <Route path="product-action" element={<ProductAction />} />
           </Route>
 
-      <Route path="product-action" element={<ProductAction />} />
+      
 
  
     </Routes>

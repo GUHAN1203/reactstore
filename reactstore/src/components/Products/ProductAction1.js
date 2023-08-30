@@ -2,16 +2,17 @@ import "./ProductAction.css";
 import { useContext, useState } from "react";
 import axios from "axios";
 import ProductItems from "./ProductItems";
-import { CreateContextApi } from "../../Store/ContextApi";
 
 const ProductAction = () => {
-  const contextApi = useContext(CreateContextApi);
 
   const [productInpt, setProductInpt] = useState({
-    title: "",
-    price: "",
-    description: "",
-    imgfile: "",
+    imgUrl: '',
+        name: '',
+        colorram: '',
+        rate: '',
+        color: '',
+        offPrice: '',
+        type: ''
   });
 
   const [fileInpt, setFileInpt] = useState(null);
@@ -32,60 +33,39 @@ const ProductAction = () => {
   const onSubmitForm = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-    
-    if(isEdit){
-      formData.append("id", editID);
-      formData.append("title", productInpt.title);
-      formData.append("price", productInpt.price);
-      formData.append("description", productInpt.description);
-      if(fileInpt){
-        formData.append("imageFile", fileInpt);
-      }
+    formData.append("name", productInpt.name);
+    formData.append("colorram", productInpt.colorram);
+    formData.append("rate", productInpt.rate);
+    formData.append("color", productInpt.color);
+    formData.append("offPrice", productInpt.offPrice);
+    formData.append("type", productInpt.type);
+    if(fileInpt){
+      formData.append("imageFile", fileInpt);
+    }
 
-      try{
-        const response = await axios.post("http://localhost:8000/product/update-product", formData)
-        console.log(response);
-        contextApi.onUpdateProduct(response.data);
-        setProductInpt({
-          title: "",
-          price: "",
-          description: "",
-          imgfile: "",
-        });
-        setFileInpt(null)
+    try{
+      const response = await axios.post("http://localhost:8000/product/add-product", formData)
+      console.log(response);
+      setProductInpt({
+        imgUrl: '',
+        name: '',
+        colorram: '',
+        rate: '',
+        color: '',
+        offPrice: '',
+        type: ''
+        
+      });
+      setFileInpt(null)
         setImgView(null)
         setEdit(false);
         setEditId(null);
-      }
-      catch(err){
-        console.log(err);
-      }
-    }else{
-      formData.append("title", productInpt.title);
-      formData.append("price", productInpt.price);
-      formData.append("description", productInpt.description);
-      formData.append("imageFile", fileInpt);
-
-      try{
-        const response = await axios.post("http://localhost:8000/product/add-product", formData)
-        console.log(response);
-        contextApi.onAddProduct(response.data);
-        setProductInpt({
-          title: "",
-          price: "",
-          description: "",
-          imgfile: "",
-        });
-        setFileInpt(null)
-        setImgView(null)
-      }
-      catch(err){
-        console.log(err);
-      }
+    }
+    catch(err){
+      console.log(err);
     }
 
   }
-
   const onEdit = (id) =>{
     setEdit(true);
     setEditId(id);
@@ -100,7 +80,6 @@ const ProductAction = () => {
     setImgView("http://localhost:8000/images/"+findData.imgPath)
   }
 
-
   return (
     <section className="">
       <div className="container">
@@ -112,7 +91,7 @@ const ProductAction = () => {
                 <form className="product-form" onSubmit={onSubmitForm}>
                   {imgView && <img src={imgView} style={{width:"80px", marginBottom:"20px"}} />}
                   <div className="form-group mb-4">
-                    <input            
+                    <input
                       type="file"
                       placeholder="product image"
                       name="imgfile"
@@ -124,45 +103,69 @@ const ProductAction = () => {
                   <div className="form-group mb-4">
                     <input
                       type="text"
-                      placeholder="product title"
+                      placeholder="product name"
                       name="title"
                       className="form-control"
-                      value={productInpt.title}
+                      value={productInpt.name}
                       onChange={onInptHandler}
                     />
                   </div>
                   <div className="form-group mb-4">
                     <input
                       type="text"
-                      placeholder="product price"
-                      name="price"
+                      placeholder="colorram"
+                      name="colorram"
                       className="form-control"
-                      value={productInpt.price}
+                      value={productInpt.colorram}
+                      onChange={onInptHandler}
+                    />
+                  </div>
+                  <div className="form-group mb-4">
+                    <input
+                      type="text"
+                      placeholder="rate"
+                      name="rate"
+                      className="form-control"
+                      value={productInpt.rate}
                       onChange={onInptHandler}
                     />
                   </div>
                   <div className="form-group mb-4">
                     <textarea
-                      name="description"
+                      name="Color"
                       className="form-control"
-                      placeholder="Description"
-                      value={productInpt.description}
+                      placeholder="color"
+                      value={productInpt.color}
+                      onChange={onInptHandler}
+                    ></textarea>
+                  </div>
+                  
+                  <div className="form-group mb-4">
+                    <input
+                      type="text"
+                      placeholder="Offprice "
+                      name="price"
+                      className="form-control"
+                      value={productInpt.offPrice}
+                      onChange={onInptHandler}
+                    />
+                  </div>
+                  
+                  <div className="form-group mb-4">
+                    <textarea
+                      name="Color and ram description"
+                      className="form-control"
+                      placeholder="type"
+                      value={productInpt.type}
                       onChange={onInptHandler}
                     ></textarea>
                   </div>
 
                   <div className="form-group mb-4">
-                  {!isEdit && 
+                  
                     <button type="submit" className="btn btn-primary ms-0">
-                    Add product
-                  </button>
-                  }
-                  {isEdit && 
-                    <button type="submit" className="btn btn-primary ms-0">
-                    Update product
-                  </button>
-                  }
-                    
+                      Add product
+                    </button>
                     
                   </div>
                 </form>
@@ -171,7 +174,7 @@ const ProductAction = () => {
             
             <div className="col-md-8">
               <div className="product-items bx-card">
-                <ProductItems editFun={onEdit} />
+                <ProductItems />
               </div>
             </div>
           </div>

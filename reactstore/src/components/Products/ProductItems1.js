@@ -26,16 +26,25 @@ const ProductItems = (props) =>{
                                         <img style={{width:"80px"}} src={"http://localhost:8000/images/"+item.imgPath} alt=" " />
                                     </td>
                                     <td>
-                                        {item.title}
+                                        {item.name}
                                     </td>
                                     <td>
-                                        {item.price}
+                                        {item.colorram}
                                     </td>
                                     <td>
-                                        {item.description}
+                                        {item.rate}
                                     </td>
                                     <td>
-                                        <button className="btn btn-primary me-3" onClick={()=>props.editFun(item._id)}>Update</button>
+                                        {item.color}
+                                    </td>
+                                    <td>
+                                        {item.offPrice}
+                                    </td>
+                                    <td>
+                                        {item.type}
+                                    </td>
+                                    <td>
+                                        <button className="btn btn-primary me-3">Update</button>
                                         <button className="btn btn-danger">Delete</button>
                                     </td>
                                 </tr>

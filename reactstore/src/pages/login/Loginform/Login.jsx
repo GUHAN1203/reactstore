@@ -55,7 +55,7 @@ function Login() {
               backgroundColor:'#f2f2f2',
               borderRadius:'10px'
             }}
-            type="text"
+            type="password"
             className="email"
             placeholder="Password"
           />{" "}

@@ -20,10 +20,11 @@ router.post("/add-product", upload.single("imageFile"), (req, res)=>{
     const imgUrl = req.body.ImgUrl;
     const name = req.body.name;
     const colorram = req.body.colorram;
-    const rate = req.file.rate;
-    const color = req.file.color;
-    const offPrice = req.file.offPrice;
-    const type = req.file.type;
+    const rate = req.body.rate;
+    const color = req.body.color;
+    const offPrice = req.body.offPrice;
+    const type = req.body.type;
+
 
 
     const newProduct = new Products({
@@ -33,7 +34,8 @@ router.post("/add-product", upload.single("imageFile"), (req, res)=>{
         rate: rate,
         color: color,
         offPrice: offPrice,
-        type: type
+        type: type,
+       
     })
 
     newProduct.save()
