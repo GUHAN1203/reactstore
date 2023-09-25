@@ -91,7 +91,16 @@ const Footer = ()=>{
           <div className="row" style={{display: "flex", justifyContent: "spaceBetween"}}>
             <div className="col-3">
               <div className="row">
-                <div className="col-12 support"><a href="">Get Support From OnePlus</a></div>
+                <div className="col-12 support">
+                  <div class="dropup-center dropup">
+  <button class="supbtn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Get Support</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+    <li><a class="dropdown-item" href="#">1800-222-444</a></li>
+    <li><a class="dropdown-item" href="#">Email <span style={{display:"block"}} >oneplus@email.com</span></a></li>
+  </ul>
+</div>
+</div>
                 <div className="col-12"></div>
               </div>
             </div>

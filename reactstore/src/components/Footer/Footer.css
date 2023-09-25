@@ -13,6 +13,17 @@ footer li a:hover{
     
     margin-bottom:0.5rem;
 }
+.dropup:hover .dropdown-menu{
+  display: contents;
+
+}
+.supbtn{
+  color: aliceblue;
+}
+.dropdown-menu{
+  background-color: black;
+  color: aliceblue;
+}
 
 .lists{
   display: flex;
