@@ -121,6 +121,7 @@ const NavigationBar = () => {
                         shopping_cart
                       </span>
                     </a>
+        
                     <div className="d-flex me-3 ">
                       <div className="dropdown text-end  dropdown "style={{marginRight:"80px" }}>
                         
